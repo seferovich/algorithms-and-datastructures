@@ -114,6 +114,7 @@ class SinglyLinkedList {
     return this
   }
 
+  
   reverse(){
     let node = this.head
     this.head = this.tail
@@ -123,8 +124,8 @@ class SinglyLinkedList {
     for(let i = 0; i < this.length; i++){
       next = node.next
       node.next = prev
-      prev = next
+      prev = node
       node = next
-    }
+    } 
   }
 }

@@ -150,7 +150,7 @@ class DoublyLinkedList {
       next = node.prev
       node.next = next
       node.prev = prev
-
+      
       node = next
     }
     
